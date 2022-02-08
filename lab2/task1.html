@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
     <head>
         <meta charset="utf-8">
         <title>facebook</title>
@@ -10,13 +10,17 @@
                 background-color: rgb(240, 242, 245);
                 background-size: 50%;
                 font-family: Helvetica, Arial, sans-serif;
+                height: 100%;
             }
 
-
+            .all{
+                height: 100%;
+            }
             .top{
                 width: 900px;
                 height: 500px;
                 margin: 0 auto;
+                padding-bottom: 300px;
             }
 
             .main{
@@ -95,12 +99,11 @@
             
             .bottom{
                 background-color: white;
-                height: 350px;
-                margin-top: 200px;
-                padding-top: 20px;
-                padding-left: 100px;
-                padding-right: 100px;
-                margin-bottom: 0;
+                position: absolute;
+                left: 0;
+                width: 100%;
+                margin-top: auto;
+                height: 300px;
             }
 
             .b2{
@@ -109,12 +112,12 @@
                 margin: auto;
             }
 
-            .zaebalas{
+            .zae{
                 list-style-type: none;
                 display: inline;
                 
             }
-            .zaebalas li:hover, #forpas:hover, .spat:hover{
+            .zae li:hover, #forpas:hover, .spat:hover{
                 text-decoration: underline;
                 cursor: pointer;
             }
@@ -139,6 +142,7 @@
     </head>
     
     <body>
+        <div class="all">
         <div class="top">
             <div class="main">
                 <div id="facebook">
@@ -172,7 +176,7 @@
 
         <div class="bottom">
             <div class="b2">
-            <div class="lang zaebalas">
+            <div class="lang zae">
                 <ul>
                     <li>Русский</li>
                     <li>English (US)</li>
@@ -190,7 +194,7 @@
 
             <div class="border"></div>
             
-            <div class="links zaebalas">
+            <div class="links zae">
                 <ul>
                     <li>Регистрация</li>
                     <li>Вход</li>
@@ -227,7 +231,8 @@
             </div>
             <span>Meta © 2022</span>
         </div>
-        </div>       
+        </div>   
+    </div>    
     </body>
 
 </html>

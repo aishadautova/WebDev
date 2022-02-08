@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+  <head>
+
+    <meta charset="utf-8">
+    <title>Instagram</title>
+
+    <style>
+      body{
+        background-color: #f9fafc;
+        font-family: "Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+        font-size: 14px;
+        line-height: 18px;
+      }
+
+      h1{
+        margin-bottom: 35px;
+        margin-top: 25px;
+      }
+
+      .main{
+        margin: 0 auto;
+        padding-top: 8%;
+        padding-bottom: 8%;
+        width: 750px;
+        height: 600px;
+      }
+
+      .right{
+        float: right;
+        text-align: center;
+        padding-top: 13px;
+      }
+
+      .inp input{
+        height: 20px;
+        width: 248px;
+        border: solid 1px rgb(216, 216, 216);
+        background-color: #f9fafc;
+        border-radius: 3px;
+        padding: 9px;
+        font-size: 11.5px;
+      }
+
+      .inp input::placeholder{
+        color: rgb(146, 145, 145);
+      }
+      
+      .inp input:focus{
+        border: solid 1px rgb(167, 165, 165);
+        outline: none;
+      }
+
+      .bigblock{
+        border: solid 1px rgb(207, 207, 207);
+        background-color: white;
+        height: 382px;
+        width: 348px;
+      }
+
+      .smallblock{
+        background-color: white;
+        border: solid 1px rgb(207, 207, 207);
+        margin-top: 10px;
+        height: 49px;
+        padding-top: 7px;
+        padding-bottom: 7px;
+      }
+
+      .lastblock{
+        width: 350px;
+        height: 102px;
+      }
+
+      .butim{
+        border: none;
+        background-color: #f9fafc;
+        
+      }
+
+      .left{
+        float: left;
+        width: 379px;
+      }
+
+      .button{
+        cursor: pointer;
+      }
+
+      #but1{
+        background-color: rgb(177, 224, 255);
+        height: 30px;
+        width: 268px;
+        border: none;
+        border-radius: 5px;
+        color: white;
+        font-weight: bold;
+        margin-top: 8px;
+        margin-bottom: 8px;
+      }
+
+      #but2{
+        border: none;
+        background: none;
+        color: rgb(62, 76, 134);
+        font-weight: bold;
+        height: 20px;
+      }
+
+      #but3{
+        border: none;
+        background: none;
+        font-size: 11.5px;
+        color: rgb(62, 76, 134);
+        margin-top: 25px;
+      }
+
+      #but4{
+        font-weight: bold;
+        color:rgb(21, 161, 255);
+      }
+
+      .gran{
+        height: 35px;
+        width: 270px;
+        margin: 0 auto;
+        margin-top: 10px;
+      }
+
+      .border{
+        border-top: solid 1px rgb(216, 216, 216);
+        height: 1px;
+        width: 101px;
+        padding-bottom: 5px;
+      }
+
+      .gr{
+        display: inline-block;
+      }
+
+      .ili{
+        padding-left: 14px;
+        padding-right: 14px;
+      }
+
+      .faceb{
+        display: inline-block;
+        height: 16px;
+      }
+
+      .fr{
+        width: 960px;
+        height: 105px;
+        text-align: center;
+        margin: 0 auto;
+        color:rgb(146, 145, 145);
+        font-size: 12px;
+      }
+
+      .list li{
+        list-style-type: none;
+        display: inline;
+        padding: 6px;
+        cursor: pointer;
+      }
+
+      select{
+        border: none;
+        color:rgb(146, 145, 145);
+        font-size: 12px;
+      }
+
+    </style>
+  </head>
+
+  <body>
+
+    <div class="main">
+      <div class="left">
+        <div>
+          <img src="Снимок.JPG">
+        </div>
+      </div>
+
+      <div class="right">
+        <div class="bigblock">
+          
+          <h1><img src="Снимок1.JPG"></h1>
+
+          <div class="inp" style="margin-bottom: 6px;">
+            <input type="text" placeholder="Телефон, имя пользователя или эл. адрес">
+          </div>
+
+          <div class="inp" style="margin-bottom: 6px;">
+            <input type="password" placeholder="Пароль">
+          </div>
+
+          <div>
+            <button id="but1">Войти</button>
+          </div>
+
+          <div class="gran">
+            <div class="border gr"></div>
+            <div class="gr ili" style="color:rgb(146, 145, 145); font-size: 13px; font-weight: 600;">ИЛИ</div>
+            <div class="border gr"></div>
+          </div>
+
+          <div><button class="button" id="but2"><img class="faceb" src="https://m.media-amazon.com/images/I/318f9BEHwrL._AC_.jpg" width="16px" style="margin-right: 8px; height: 17px; width: 16px; margin-bottom: -2px;"><p class="faceb" style="margin:0;">Войти через Facebook</p></button></div>
+
+          <div><button class="button" id="but3">Забыли пароль?</button></div>
+
+        </div>
+
+        <div class="smallblock">
+          <p>У вас ещё нет аккаунта? <button class="button" id="but4" style="border: none; background: none; padding: 0;">Зарегистрироваться</button></p>
+        </div>
+
+        <div class="lastblock">
+          <p style="margin-top: 17px; margin-bottom: 17px; height: 20px;">Установите приложение.</p>
+
+          <div>
+            <button class="button butim" style="padding: 2px;"><img src="https://www.instagram.com/static/images/appstore-install-badges/badge_ios_russian-ru.png/bfba6d0fd6bd.png" width="136px"></button>
+            <button class="button butim" style="padding: 2px;"><img src="https://www.instagram.com/static/images/appstore-install-badges/badge_android_russian-ru.png/4c70948c09f3.png" width="136px"></button>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="fr">
+      <ul class="list" style="cursor: default;">
+        <li>Meta</li>
+        <li>Информация</li>
+        <li>Блог</li>
+        <li>Вакансии</li>
+        <li>Помощь</li>
+        <li>API</li>
+        <li>Конфиденциальность</li>
+        <li>Условия</li>
+        <li>Популярные аккаунты</li>
+        <li>Хэштеги</li>
+        <li>Места</li>
+        <li>Instagram Lite</li>
+        <li>Красота</li>
+        <li>Танцы</li>
+        <li>Фитнес</li>
+        <li>Еда и напитки</li>
+        <li>Дом и сад</li>
+        <li>Музыка</li>
+        <li>Изобразительное искусство</li>
+      </ul>
+      
+      <span> <select class="button">
+          <option value="0">Русский</option>
+          <option value="1">English</option>
+        </select> 
+        © 2022 Instagram from Meta</span>
+    </div>
+
+  </body>
+</html>
