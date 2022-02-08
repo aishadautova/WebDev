@@ -34,12 +34,17 @@
                 padding-bottom: 15px;
             }
 
-            .vhod{
+            .bloksn{
+                width: 400px;
+                height: 400px;
                 float: right;
+            }
+
+            .vhod{
                 text-align: center;
                 background-color: white;
                 border-radius: 8px;
-                box-shadow: 0 2px 4px rgb(182, 182, 182), 0 8px 16px rgb(190, 190, 190);
+                box-shadow: 0 2px 4px rgb(197, 196, 196), 0 8px 16px rgb(207, 207, 207);
                 margin-top: 120px;
                 padding: 20px;
             }
@@ -53,8 +58,8 @@
             }
 
             #but1{
-                height: 45px;
-                width: 330px;
+                height: 48px;
+                width: 340px;
                 background-color: rgb(24,119,242);
                 border: none;
                 border-radius: 8px;
@@ -70,12 +75,18 @@
                 font-size: 16px;
             }
 
-            input{
+            .vvod{
                 border-radius: 8px;
                 border: solid 1px rgb(173, 173, 173);
                 height: 45px;
                 width: 330px;
                 font-size: 17px;
+                padding-left: 5px;
+            }
+            .vvod:focus{
+                border: solid 1px rgb(70, 156, 255);
+                box-shadow: 0px 0px 0px 2px rgb(214, 233, 255);
+                outline: none;
             }
 
             .in{
@@ -84,11 +95,12 @@
             
             .bottom{
                 background-color: white;
-                height: 300px;
+                height: 350px;
                 margin-top: 200px;
                 padding-top: 20px;
                 padding-left: 100px;
                 padding-right: 100px;
+                margin-bottom: 0;
             }
 
             .b2{
@@ -135,12 +147,13 @@
                 <p>Facebook помогает вам всегда оставаться на связи и общаться со своими знакомыми.</p>
             </div>
 
+            <div class="bloksn">
             <div class="vhod">
                 <div class="in">
-                    <input type="text" placeholder="Электонный адрес или номер телефона">
+                    <input class="vvod" type="text" placeholder="Электонный адрес или номер телефона">
                 </div>
                 <div class="in">
-                    <input type="password" placeholder="Пароль">
+                    <input class="vvod" type="password" placeholder="Пароль">
                 </div>
                 <button id="but1" class="button in">Вход</button>
 
@@ -151,10 +164,11 @@
                 <button id="but2" class="button in" style="margin-top: 30px">Создать новый аккаунт</button>
                 
             </div>
-            
+            <div style="padding-top: 13px; font-size: 14px; text-align: center;"><p><strong class="spat">Создать Страницу</strong> знаменитости, музыкальной группы или компании.</p></div>
+            </div>
         </div>
 
-        <div style="margin-left: 970px; width: 450px; font-size: 14px; text-align: center;"><p><strong class="spat">Создать Страницу</strong> знаменитости, музыкальной группы или компании.</p></div>
+        
 
         <div class="bottom">
             <div class="b2">
