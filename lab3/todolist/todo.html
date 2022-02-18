@@ -1,0 +1,118 @@
+<html>
+  <head>
+    <style>
+      
+      body{
+        font-family:Arial, Helvetica, sans-serif;
+      }
+
+      .o1{
+        position: fixed;
+        background-color: rgb(0, 0, 0);
+        color: white;
+        width: 100%;
+        left: 0;
+        top: 0;
+        height: 40px;
+      }
+
+      .o1 h2{
+        margin-top: 5px;
+        font-size: 25;
+        font-weight: 100;
+        color: pink;
+      }
+
+      .o2{
+        padding-top: 50px;
+        width: 900px;
+        margin: 0 auto;
+      }
+
+      .o2 input{
+        border: solid 1px grey;
+        border-radius: 8px;
+        width: 700px;
+        height: 30px;
+      }
+
+      #input-task:focus{
+        border: solid 1px rgb(233, 139, 154);
+        outline: none;
+      }
+
+      .o2 button{
+        background-color: pink;
+        border: none;
+        border-radius: 8px;
+        height: 30px;
+        width: 40px;
+        cursor: pointer;
+      }
+      .o2 button:hover{
+        background-color: rgb(233, 139, 154);
+      }
+
+      #todos{
+        margin-top: 20px;
+        display: block;
+      }
+      .todo-item{
+        border: solid 1px pink;
+        border-radius: 8px;
+        width: 745px;
+        height: 30px;
+        display: flex;
+        justify-content: end;
+        margin-bottom: 10px;
+      }
+
+      .buttons{
+        display: flex;
+      }
+
+      .description{
+        padding-top: 7px;
+        margin-right: 500px;
+        justify-content: start;
+      }
+
+      .buttons input{
+        margin-right: -300px;
+        margin-left: -300px;
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+
+      .buttons button{
+        width: 50px;
+      }
+
+      .checked .description{
+        text-decoration: line-through;
+        opacity: 0.5;
+      }
+      .checked{
+        background-color: rgb(252, 214, 220);
+      }
+
+    </style>
+  </head>
+
+  <body>
+
+    <div class="o1">
+      <h2>ToDo List</h2>
+    </div>
+    
+    <div class="o2">
+      <h1>ToDo List</h1>
+      <input class="task" id="input-task" type="text" placeholder="NewTask"> <button id="add-task">Add</button>
+
+      <div id="todos">
+      </div>
+
+    </div>
+    <script src="todo.js"></script>
+  </body>
+</html>
