@@ -1,0 +1,27 @@
+.main{
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  height: 50px;
+  background-color: pink;
+  padding-bottom: 40px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-left: 30px; 
+}
+
+#MyStore{
+  text-decoration: none;
+  text-decoration-color: black;
+}
+
+#checkout{
+  border: none;
+  font-size: 18px;
+  background-color: rgb(245, 153, 168);
+  width: 120px;
+  height: 40px;
+  margin-left: 1020%;
+}

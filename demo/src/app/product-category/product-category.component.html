@@ -1,0 +1,32 @@
+<!-- <p>product-category works!</p> -->
+
+<div *ngFor="let product of products">
+ <div *ngIf="product && product.category == category?.name">
+
+  <h2>{{ category?.name }}</h2>
+  <h3>
+    <a 
+      [title]="product.name + ' details'"
+      [routerLink]="['/products', product.id]">
+      {{ product.name }}
+    </a>
+  </h3>
+  
+  <img src={{product.image}} width="100px">
+  <p>Rating: {{product.rating}}</p>
+  <p>Description: {{product.description}}</p>
+
+  <a href="https://web.telegram.org/" target="_blanck">
+    <button type="button" (click)="share()">
+      Share
+    </button>
+    </a>
+  
+    <app-product-alerts 
+    [product] = "product"
+    (notify)="onNotify()"
+    >
+    </app-product-alerts>
+    
+ </div>
+</div>
