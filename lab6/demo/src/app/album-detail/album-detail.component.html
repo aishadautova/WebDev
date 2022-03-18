@@ -1,0 +1,26 @@
+<p>album-detail works!</p>
+<div *ngIf="loaded"> 
+
+<div *ngIf="album"> 
+
+  <h2>Album detail #{{album.id}}</h2>
+
+  <input type="text" [(ngModel)]="album.title">
+
+  <p>{{album.id}}</p>
+  <p>{{album.title}}</p>
+
+  <button [routerLink]="['/albums', album.id, 'photos']">Photos</button>
+  <button (click)="update()">Update</button>
+  <button (click)="goBack()">Go back</button>
+
+</div>
+
+</div>
+<p *ngIf="!loaded">Loading...</p>
+
+<ul *ngIf="photos.length">
+  <li *ngFor="let photo of photos">
+    {{photo.id}} {{photo?.title}} <img src={{photo?.url}}>
+  </li>
+</ul>

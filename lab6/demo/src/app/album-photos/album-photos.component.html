@@ -1,0 +1,9 @@
+<p>album-photos works!</p>
+
+
+<div *ngFor="let photo of photos">
+  {{photo.id}} {{photo.title}}
+  <img src={{photo.url}}>
+</div>
+
+<button (click)="returnBack()">Back</button>
