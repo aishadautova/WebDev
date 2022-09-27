@@ -1,0 +1,25 @@
+<h2>Product details</h2>
+
+<div id="main" *ngIf="product">
+
+  <div id="img">
+    <a href={{product.link}} target="_blank">
+    <h1>{{product.name}}</h1>
+    <img src={{product.image}} width="400px">
+    </a>
+  </div>
+  
+  <div id="disk">
+    <h3>{{product.price | currency}}</h3>
+    <p>rating: {{product.rating}} Likes: {{product.like}}</p>
+    <p style="font-weight: bold;">Description:</p>
+    <p>{{product.description}}</p>
+
+    <button (click)="like(product)">Like</button>
+
+    <button type="button" (click)="addToCart(product)">Buy</button>
+
+  </div>
+
+</div>
+ 
